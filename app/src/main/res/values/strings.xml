@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project_Hockey_Store</string>
+    <string name="create_account">Create an account</string>
+    <string name="enter_login">Enter Login</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_pass">Enter Password</string>
+    <string name="registration">Registration</string>
+</resources>

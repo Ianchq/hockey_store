@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/font"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="290dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="@string/create_account" />
+
+    <EditText
+        android:id="@+id/user_login"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_gravity="center"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/enter_login" />
+
+    <EditText
+        android:id="@+id/user_email"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_gravity="center"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/enter_email" />
+
+    <EditText
+        android:id="@+id/user_pass"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_gravity="center"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/enter_pass" />
+
+    <Button
+        android:id="@+id/button_reg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/registration"
+        android:textSize="18dp" />
+
+</LinearLayout>
