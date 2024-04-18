@@ -4,5 +4,9 @@
     <string name="enter_login">Enter Login</string>
     <string name="enter_email">Enter Email</string>
     <string name="enter_pass">Enter Password</string>
-    <string name="registration">Registration</string>
+    <string name="sign_up">Sign up</string>
+
+
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_to_account">Sign in to your account</string>
 </resources>
