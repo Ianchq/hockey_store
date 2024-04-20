@@ -17,6 +17,13 @@ class AuthActivity : AppCompatActivity() {
         val userPass: EditText = findViewById(R.id.user_pass_auth)
         val button: Button = findViewById(R.id.button_auth)
 
+        val linkToReg: TextView = findViewById(R.id.link_to_reg)
+
+        linkToReg.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
         button.setOnClickListener {
             val login = userLogin.text.toString().trim()
             val pass = userPass.text.toString().trim()
@@ -24,29 +31,22 @@ class AuthActivity : AppCompatActivity() {
             if (login == "" || pass == "")
                 Toast.makeText(this, "Please enter all information", Toast.LENGTH_LONG).show()
             else {
-
                 val db = DBHelper(this, null)
                 val isAuth = db.getUser(login, pass)
-
-                if (isAuth) {
+                if (isAuth){
                     Toast.makeText(this, "User $login is logged in!", Toast.LENGTH_LONG).show()
-
                     userLogin.text.clear()
                     userPass.text.clear()
 
-                } else{
+                    val intent = Intent(this, ItemsActivity::class.java)
+                    startActivity(intent)
+                } else {
                     Toast.makeText(this, "User $login isn't exist", Toast.LENGTH_LONG).show()
                 }
+
+
+
             }
-        }
-
-
-
-        val linkToReg: TextView = findViewById(R.id.link_to_auth)
-
-        linkToReg.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
         }
     }
 }
