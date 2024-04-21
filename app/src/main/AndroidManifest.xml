@@ -17,13 +17,16 @@
         android:theme="@style/Theme.Project_Hockey_Store"
         tools:targetApi="31">
         <activity
-            android:name=".ItemsActivity"
+            android:name=".items_activities.ItemActivity"
             android:exported="false" />
         <activity
-            android:name=".AuthActivity"
+            android:name=".items_activities.ItemsActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".reg_and_auth_activities.AuthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reg_and_auth_activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.example.project_hockey_store
+package com.example.project_hockey_store.reg_and_auth_activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.example.project_hockey_store.DBHelper
+import com.example.project_hockey_store.items_activities.ItemsActivity
+import com.example.project_hockey_store.R
 
 class AuthActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

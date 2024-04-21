@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ItemsActivity">
+    tools:context=".items_activities.ItemsActivity">
 
 
     <TextView
